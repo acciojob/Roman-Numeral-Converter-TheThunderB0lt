@@ -18,10 +18,10 @@ function convertToRoman(num) {
   let romanNumeral = '';
 
   for (let i = 0; i < romanSymbols.length; i++) {
-    while (num >= romanSymbols[i][1]) {
-      romanNumeral += romanSymbols[i][0];
-      num -= romanSymbols[i][1];
-    }
+	while (num >= romanSymbols[i][1]) {
+	  romanNumeral += romanSymbols[i][0];
+	  num -= romanSymbols[i][1];
+	}
   }
 
   return romanNumeral;
